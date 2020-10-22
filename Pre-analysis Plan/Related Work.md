@@ -3,7 +3,7 @@
 * Transfer learning
 * GAN
 * Text-based Editing of Talking-Head Video https://www.youtube.com/watch?v=2xWnOL5bts8
-* Frame Generation: https://venturebeat.com/2019/07/19/deepminds-ai-learns-to-generate-realistic-videos-by-watching-youtube-clips/
+* Frame Generation: https://venturebeat.com/2019/07/19/deepminds-ai-learns-to-generate-realistic-videos-by-watching-youtube-clips/ (about this paper: https://arxiv.org/pdf/1907.06571.pdf which has a lot of good references!)
 * VIDEO (LANGUAGE) MODELING: A BASELINE FOR GENERATIVE MODELS OF NATURAL VIDEOS https://arxiv.org/pdf/1412.6604.pdf
 * Face Point Annotations: https://ibug.doc.ic.ac.uk/resources/facial-point-annotations/
 * Animated Film in Public Domain: https://en.wikipedia.org/wiki/List_of_animated_films_in_the_public_domain_in_the_United_States
