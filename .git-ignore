@@ -5,4 +5,4 @@
 /data/*
 
 # Except
-!data/README.md
+! data/README.md
