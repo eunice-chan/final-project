@@ -1,6 +1,7 @@
-# Related Work
-Links I found while formulating the project. Provides context and inspiration for the project.
+# Related Work and Ideas
 
+* Transfer learning
+* GAN
 * Text-based Editing of Talking-Head Video https://www.youtube.com/watch?v=2xWnOL5bts8
 * Frame Generation: https://venturebeat.com/2019/07/19/deepminds-ai-learns-to-generate-realistic-videos-by-watching-youtube-clips/
 * VIDEO (LANGUAGE) MODELING: A BASELINE FOR GENERATIVE MODELS OF NATURAL VIDEOS https://arxiv.org/pdf/1412.6604.pdf
@@ -11,6 +12,7 @@ Links I found while formulating the project. Provides context and inspiration fo
 * ML for Physics ie this: https://www.youtube.com/watch?v=iOWamCtnwTc
 * Generative Models for Low-Dimensional Video Representation and Reconstruction https://escholarship.org/uc/item/1n4534m8
 * Unaligned Sequential Image Transformation with GAN https://escholarship.org/uc/item/8012d6st
+* NVIDIA’s AI Recreated PacMan! https://www.youtube.com/watch?v=3UZzu4UQLcI
 * Towards Fast and Stable GAN via Free Adversarial Training https://escholarship.org/uc/item/8k57j7z3
 * Compared to many other moving-image archives, Prelinger Archives provides a relatively high level of public access to its collections. Over 6,400 public domain films are available for download and unrestricted reuse on the Internet at the Internet Archive. https://archive.org/details/prelinger
 * Animated videos https://www.loc.gov/collections/national-screening-room/?fa=online-format:video%7Coriginal-format:film,+video%7Csubject:animated+films
