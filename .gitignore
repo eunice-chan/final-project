@@ -1,8 +1,7 @@
 # Ignore these
-.DS_Store
 **/.DS_Store
 **/.ipynb_checkpoints
 /data/*
 
 # Except
-! data/README.md
+!data/README.md
