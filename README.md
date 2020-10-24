@@ -29,7 +29,5 @@ Pyles, Chris. Insurance Data. Github. 12 March 2019. [https://github.com/chrispy
 
 ## To-do
 * Update [binder](https://mybinder.org/) link or add google colab link in project README.md.
-* Update directory structure in project README.md.
 * Update requirements.txt.
 * Update sources.
-* Ensure each folder has a related README.md.
