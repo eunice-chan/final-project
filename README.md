@@ -5,7 +5,7 @@ _Eunice Chan_
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ls88-openscienceconnector/final-project/master)
 
-This project is for the Honors Project in DATA H195 at UC Berkeley. In this project, I explore video generation for animated videos. For more detailed information, see the [Preliminary Prospectus](writing/Preliminary%20Prospectus.md).
+This project is for the Honors Project in DATA H195 at UC Berkeley. In this project, I explore video generation for animated videos. For more detailed information, see the [Project Breakdown](Pre-analysis%20Plan/Project%20Breakdown.md).
 
 ## Directory Structure
 
@@ -18,19 +18,6 @@ This repo contains a few subfolders which contain the elements of this project.
 | `output`  | contains all output data  |
 | `output/images`  | image files used in the Jupyter Notebooks  |
 | `writing`  | Markdown files with text generated for this project  |
-
-### Pre-Analysis Plan
-
-This should be completed after you have your data set but before you begin your analysis. **Make sure to timestamp this document!** This is the whole point of a Pre-Analysis Plan. It should contain the following sections:
-
-| Section | Description |
-|-----|-----|
-| Abstract  | an abstract for your project, excl. findings  |
-| Data  | description of your data set (something akin to a synthesis of the Step 1 assignment)  |
-| Strategy  | an outline of the steps you will take to analyze your data (mostly a description of the code)  |
-| Analysis  | any heuristics or mathematical models that you use, and the reasons for their use  |
-| Deliverables  | a description of the deliverable files in the repo, incl. where your presentation is  |
-| Sources   | list of sources for your data _and any other research_ that you did  |
 
 ## Sources
 
