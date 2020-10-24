@@ -17,7 +17,7 @@ This repo contains a few subfolders which contain the elements of this project.
 | `notebooks`  | Jupyter Notebook files, including reproduction analysis using both `pandas` and `datascience`, as well as the Pre-Analysis Plan and a "blank" notebook  |
 | `output`  | contains all output data  |
 | `output/images`  | image files used in the Jupyter Notebooks  |
-| `writing`  | Markdown files with text generated for this project  |
+| `plan`  | Markdown files with text generated in preparation for this project  |
 
 ## Sources
 
