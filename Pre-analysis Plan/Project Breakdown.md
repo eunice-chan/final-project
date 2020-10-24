@@ -10,7 +10,7 @@ In short, animation has much more creative license, making 2D hand-drawn video g
 
 The applicability of this problem in reducing the labor cost of the production for 2D animation is one thing that I will consider in this project. Some time will be devoted in assessing the current state of 2D animation generation and how this solution can be integrated in the production of such animation.
 
-##Strategy
+## Strategy
 I plan on evaluating performance of the models primarily on 2D animated. However, if time and datasets permit, I will also evaluate the performance on 3D animated, and natural videos.
 
 My strategy for approaching this project can be broken down into five steps.
