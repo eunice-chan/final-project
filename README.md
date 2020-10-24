@@ -5,7 +5,7 @@ _Eunice Chan_
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ls88-openscienceconnector/final-project/master)
 
-This project is for the Honors Project in DATA H195 at UC Berkeley. In this project, I explore video generation for animated videos. For more detailed information, see the [Project Breakdown](Pre-analysis%20Plan/Project%20Breakdown.md).
+This project is for the Honors Project in DATA H195 at UC Berkeley. In this project, I explore video generation for animated videos. For more detailed information, see the [Project Breakdown](plan/Project%20Breakdown.md).
 
 ## Directory Structure
 
