@@ -14,7 +14,7 @@ This repo contains a few subfolders which contain the elements of this project.
 | Folder | Description |
 |-----|-----|
 | `data`  | the dataset used for this project and related information |
-| `motion_graph_inbetweening`  | stripped down and modified [Fairmotion](https://github.com/facebookresearch/fairmotion) codebase with additional functionalities and an inbetweening implementation |
+| `motion_graph_inbetweening`  | stripped down and modified [Fairmotion](https://github.com/facebookresearch/fairmotion) codebase with additional functionalities, matplotlib visualizations, and an inbetweening implementation |
 | `motion_graph_inbetweening/fairmotion/motion_graph/py_viewer_utils`  | code from [py bvh](https://github.com/Seanny123/py_bvh) used by `viz.py` to visualize bvh files in matplotlib. |
 | `notebooks`  | Jupyter Notebook files. None yet! |
 | `output`  | all output data. None yet!  |
