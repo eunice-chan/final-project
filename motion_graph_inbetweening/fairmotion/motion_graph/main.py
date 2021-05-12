@@ -11,6 +11,11 @@ from fairmotion.core import velocity
 from fairmotion.tasks.motion_graph import motion_graph as graph
 from fairmotion.utils import utils
 
+# For metrics
+import os
+import time
+import csv
+
 
 logging.basicConfig(
     format="[%(asctime)s] %(message)s",
@@ -47,6 +52,9 @@ if __name__ == "__main__":
     )
     ## Optional
     parser.add_argument(
+        "--save-metrics", help="Save inbetweening metrics"
+    )
+    parser.add_argument(
         "--save-graph", help="Save generated graph"
     )
 
@@ -74,15 +82,19 @@ if __name__ == "__main__":
     parser.add_argument("--inbetweening", action='store_true',
                         help="Generate long-term inbetweening")
     ## Optional
+    parser.add_argument("--start_node", type=int, default=None,
+                        help="Start node index")
+    parser.add_argument("--end_node", type=int, default=None,
+                        help="End node index")
     parser.add_argument("--steps", type=int, default=5,
                         help="Number of steps")
-    parser.add_argument("--epsilon", type=float, default=10.0,
-                        help="Biggest amount of difference acceptable")
-    parser.add_argument("--freedom", type=float, default=1000000.0,
-                        help="How different a pose in the transition " +
-                        "can be from the given poses. Similar to diff-threshold.")
-    parser.add_argument("--lam", type=float, default=0.1,
-                        help="Freedom decay factor")
+    # parser.add_argument("--epsilon", type=float, default=10.0,
+    #                     help="Biggest amount of difference acceptable")
+    # parser.add_argument("--freedom", type=float, default=1000000.0,
+    #                     help="How different a pose in the transition " +
+    #                     "can be from the given poses. Similar to diff-threshold.")
+    # parser.add_argument("--lam", type=float, default=0.1,
+    #                     help="Freedom decay factor")
 
     args = parser.parse_args()
 
@@ -156,20 +168,37 @@ if __name__ == "__main__":
 
 
     # del motions[:]
-
     if args.save_graph:
         mg.save_graph(args.save_graph)
 
+    # mg.draw()
+    if args.save_metrics:
+        start = time.time()
     if args.inbetweening:
         start_pose = None
         end_pose = None
-        motion, _ = mg.inbetween(start_pose=start_pose,
-                                 end_pose=end_pose,
-                                 epsilon=args.epsilon,
-                                 freedom=args.freedom,
-                                 lam=args.lam,
-                                 steps=args.steps)
+        motion, nodes, start_node, end_node, diff, error = mg.inbetween(steps=args.steps,
+                                                                 start_pose=start_pose,
+                                                                 end_pose=end_pose,
+                                                                 start_node=args.start_node,
+                                                                 end_node=args.end_node)
     else:
-        motion, _ = mg.create_random_motion(length=6.0, start_node=10) #Originally was length 10.0, start_node=0
-    bvh.save(motion, filename=args.output_bvh, verbose=True)
-    logging.info(f'Saved BVH')
+        motion, nodes = mg.create_random_motion(length=args.steps, start_node=args.start_node) #Originally was length 10.0, start_node=0
+    if args.save_metrics:
+        end = time.time()
+        mode = 'a'
+        filename = 'metrics.csv'
+        rows = []
+        if not(os.path.exists(filename) and os.path.isfile(filename)):
+            mode = 'w'
+            header = ('Dataset', 'BVH', 'Wall-Clock Start Time', 'Wall-Clock End Time', 'Wall-Clock Elapsed Time (s)', 'Node Sequence', 'Steps', 'Start Node', 'End Node', 'Error')
+            rows.append(header)
+        run_data = (motion_files, args.output_bvh, start, end, end-start, nodes, args.steps, start_node, end_node, error)
+        rows.append(run_data)
+        with open(filename, mode, newline='') as csvfile:
+            writer = csv.writer(csvfile)
+            for row in rows:
+                writer.writerow(row)
+    if motion:
+        bvh.save(motion, filename=args.output_bvh, verbose=True)
+        logging.info(f'Saved BVH')
