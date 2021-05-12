@@ -1,0 +1,23 @@
+python main.py --motion-folder . --save-graph cmu_5.gzip --output-bvh ex.bvh --num-workers 2
+
+[2021-04-29 20:38:23] Start node5844
+[2021-04-29 20:40:09] Done node5844
+[2021-04-29 20:40:09] Start node5845
+[2021-04-29 20:41:56] Done node5845
+[2021-04-29 20:41:56] Start node5846
+[2021-04-29 20:43:41] Done node5846
+[2021-04-29 20:43:43] Merging 5730 edges...
+100%|████████████████████████████████████████████████████████████████████████████| 5730/5730 [00:00<00:00, 6888.56it/s]
+[2021-04-29 20:43:44] MotionGraph was constructed
+[2021-04-29 20:43:44] NumNodes: 5847
+[2021-04-29 20:43:44] NumEdges: 5730
+[2021-04-29 20:43:44] Constructed motion graph
+[2021-04-29 20:43:44] Saved cmutest_5 (5847 nodes / 5730 edges)
+[2021-04-29 20:43:47] [0] {'motion_idx': 0, 'frame_start': 0, 'frame_end': 45}
+[2021-04-29 20:43:51] [1] {'motion_idx': 0, 'frame_start': 45, 'frame_end': 90}
+[2021-04-29 20:43:53] [2] {'motion_idx': 0, 'frame_start': 90, 'frame_end': 135}
+[2021-04-29 20:43:55] [3] {'motion_idx': 0, 'frame_start': 135, 'frame_end': 180}
+[2021-04-29 20:43:57] [4] {'motion_idx': 0, 'frame_start': 180, 'frame_end': 225}
+[2021-04-29 20:43:59] [5] {'motion_idx': 0, 'frame_start': 225, 'frame_end': 270}
+[2021-04-29 20:44:01] [6] {'motion_idx': 0, 'frame_start': 270, 'frame_end': 315}
+[2021-04-29 20:44:04] Saved BVH

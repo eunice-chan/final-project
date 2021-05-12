@@ -1,0 +1,90 @@
+python main.py --motion-folderlafan1/ --num-workers 10 --output-bvh out.bvh --save-mg lafan.gzip
+[2021-03-05 11:14:49] Loaded 77 files
+[2021-03-05 11:14:49] Starting construction
+[2021-03-05 11:14:49] Creating nodes
+[2021-03-05 12:23:42] Merging 10945 nodes...
+
+  0%|          | 0/10945 [00:00<?, ?it/s]
+100%|██████████| 10945/10945 [00:00<00:00, 254405.21it/s]
+[2021-03-05 12:23:42] Creating edges...
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+[2021-03-09 10:36:44] Merging 10868 edges...
+
+  0%|          | 0/10868 [00:00<?, ?it/s]
+100%|██████████| 10868/10868 [00:00<00:00, 257488.45it/s]
+[2021-03-09 10:36:44] MotionGraph was constructed
+[2021-03-09 10:36:44] NumNodes: 10945
+[2021-03-09 10:36:45] NumEdges: 10868
+[2021-03-09 10:36:45] Saved lafan.gzip (10945 nodes / 10868 edges)
+[2021-03-09 10:36:46] [0] {'motion_idx': 0, 'frame_start': 0, 'frame_end': 45}
+[2021-03-09 10:36:51] [1] {'motion_idx': 0, 'frame_start': 45, 'frame_end': 90}
+[2021-03-09 10:36:52] [2] {'motion_idx': 0, 'frame_start': 90, 'frame_end': 135}
+[2021-03-09 10:36:53] [3] {'motion_idx': 0, 'frame_start': 135, 'frame_end': 180}
+[2021-03-09 10:36:54] [4] {'motion_idx': 0, 'frame_start': 180, 'frame_end': 225}
+[2021-03-09 10:36:55] [5] {'motion_idx': 0, 'frame_start': 225, 'frame_end': 270}
+[2021-03-09 10:36:56] [6] {'motion_idx': 0, 'frame_start': 270, 'frame_end': 315}
+
+
+srun -N 1 -n 1  python main.py --motion-folder /work/ekchan/li/lafan1/ --num-workers 10 --diff-threshold 1000 --output-bvh out1000.bvh --save-mg lafan_1000.gzip & 
+[2021-03-09 12:13:04] Loaded 77 files
+[2021-03-09 12:13:04] Starting construction
+[2021-03-09 12:13:05] Creating nodes
+[2021-03-09 13:19:56] Merging 10945 nodes...
+
+  0%|          | 0/10945 [00:00<?, ?it/s]
+100%|██████████| 10945/10945 [00:00<00:00, 245839.84it/s]
+[2021-03-09 13:19:56] Creating edges...
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+/work/ekchan/li/fairmotion/fairmotion/core/similarity.py:106: RuntimeWarning: invalid value encountered in double_scalars
+  ee_weights = [w / ee_weights_sum for w in ee_weights]
+[2021-03-13 09:22:45] Merging 11169 edges...
+
+  0%|          | 0/11169 [00:00<?, ?it/s]
+100%|██████████| 11169/11169 [00:00<00:00, 346154.90it/s]
+[2021-03-13 09:22:45] MotionGraph was constructed
+[2021-03-13 09:22:45] NumNodes: 10945
+[2021-03-13 09:22:45] NumEdges: 11169
+[2021-03-13 09:23:20] Saved lafan_1000.gzip (10945 nodes / 11169 edges)
+[2021-03-13 09:23:21] [0] {'motion_idx': 0, 'frame_start': 0, 'frame_end': 45}
+[2021-03-13 09:23:22] [1] {'motion_idx': 0, 'frame_start': 45, 'frame_end': 90}
+[2021-03-13 09:23:25] [2] {'motion_idx': 0, 'frame_start': 90, 'frame_end': 135}
+[2021-03-13 09:23:26] [3] {'motion_idx': 0, 'frame_start': 135, 'frame_end': 180}
+[2021-03-13 09:23:27] [4] {'motion_idx': 0, 'frame_start': 180, 'frame_end': 225}
+[2021-03-13 09:23:28] [5] {'motion_idx': 0, 'frame_start': 225, 'frame_end': 270}
+[2021-03-13 09:23:29] [6] {'motion_idx': 0, 'frame_start': 270, 'frame_end': 315}

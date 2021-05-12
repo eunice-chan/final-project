@@ -1,0 +1,9 @@
+python ..\main.py --motion-folder lafan --save-graph lafan_subjects12345_graph.gzip
+--output-bvh lafan_subjects12345_bvh.bvh --num-workers 2
+
+[2021-03-08 15:02:12] MotionGraph was constructed
+[2021-03-08 15:02:12] NumNodes: 10945
+[2021-03-08 15:02:12] NumEdges: 10868
+[2021-03-08 15:02:12] Constructed motion graph
+[2021-03-08 15:02:13] Saved lafan_subjects12345_graph.gzip (10945 nodes / 10868
+edges)

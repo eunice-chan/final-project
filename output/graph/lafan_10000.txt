@@ -1,0 +1,9 @@
+python ..\main.py --motion-folder lafan --save-graph lafan_subjects12345_graph_10000
+--output-bvh ex.bvh --num-workers 2 --diff-threshold 10000
+
+[2021-04-03 13:28:02] MotionGraph was constructed
+[2021-04-03 13:28:02] NumNodes: 10945
+[2021-04-03 13:28:02] NumEdges: 12657
+[2021-04-03 13:28:02] Constructed motion graph
+[2021-04-03 13:28:02] Saved lafan_subjects12345_graph_10000 (10945 nodes / 12657
+edges)

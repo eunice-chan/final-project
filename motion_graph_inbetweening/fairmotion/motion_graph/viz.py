@@ -5,7 +5,7 @@ from fairmotion.data import bvh
 import datetime
 import argparse
 
-def viz_motion(motion, num_nodes=4, up_dir='y', r=100, lines=True, lines_color='navy', points=True, points_color='goldenrod', lines_color_2='green'):
+def viz_motion(motion, num_nodes=4, save=False, up_dir='y', r=100, lines=True, lines_color='navy', points=True, points_color='goldenrod', lines_color_2='green', interval=5):
     now = datetime.datetime.now().strftime('%Y%m%d%H%M%S%f')
     if type(motion) == str:
         fi = motion
@@ -47,9 +47,7 @@ def viz_motion(motion, num_nodes=4, up_dir='y', r=100, lines=True, lines_color='
     motion = {}
 
     for frame in range(skel.frames):
-
         skel.create_edges_onet(frame,debug=0)
-
         for edge in skel.edges[frame]:
             for vert in (edge.wv1, edge.wv2):
                 if vert.descr is not last_desc:
@@ -100,10 +98,6 @@ def viz_motion(motion, num_nodes=4, up_dir='y', r=100, lines=True, lines_color='
             else:
                 plots[f'{joint_1}'] = ax.scatter(*motion[joint_1][frame], s=2, zdir=up_dir, color='blue')
 
-    # ax.set_xlabel("x")
-    # ax.set_ylabel("y")
-    # ax.set_zlabel("z")
-
     frame = 1
     xs = []
     ys = []
@@ -148,14 +142,19 @@ def viz_motion(motion, num_nodes=4, up_dir='y', r=100, lines=True, lines_color='
                         plots[f'{joint_1}'].set_3d_properties(start[2], zdir=up_dir)
                         plots[f'{joint_2}'].set_offsets(np.c_[end[0], end[1]])
                         plots[f'{joint_2}'].set_3d_properties(end[2], zdir=up_dir)
-        plt.pause(1/30)
+        if save and frame+1 % interval == 0:
+            # print(frame, skel.frames, f'./motion/motion_{frame-1}.png')
+            plt.savefig(f'./motion/motion_{frame-1}.png')
+        plt.pause(1/1200)
 
     plt.close()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--fi")
+    parser.add_argument("--interval", default=5, type=int)
     parser.add_argument("--nodes", default=4, type=int)
+    parser.add_argument("--save", default=False, action='store_true')
     args = parser.parse_args()
 
-    viz_motion(args.fi, num_nodes=args.nodes)
+    viz_motion(args.fi, num_nodes=args.nodes, save=args.save, interval=args.interval)

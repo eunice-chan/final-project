@@ -1,0 +1,22 @@
+python main.py --motion-folder . --save-graph cmu_1K.gzip --output-bvh ex.bvh --num-workers 2 --diff-threshold 1000
+
+[2021-04-25 19:50:14] Done node5844
+[2021-04-25 19:50:14] Start node5845
+[2021-04-25 19:51:58] Done node5845
+[2021-04-25 19:51:58] Start node5846
+[2021-04-25 19:53:40] Done node5846
+[2021-04-25 19:53:42] Merging 6021 edges...
+100%|███████████████████████████████████████████████████████████████████████████| 6021/6021 [00:00<00:00, 11581.87it/s]
+[2021-04-25 19:53:42] MotionGraph was constructed
+[2021-04-25 19:53:42] NumNodes: 5847
+[2021-04-25 19:53:42] NumEdges: 6021
+[2021-04-25 19:53:43] Constructed motion graph
+[2021-04-25 19:53:43] Saved cmutest_1K (5847 nodes / 6021 edges)
+[2021-04-25 19:53:45] [0] {'motion_idx': 0, 'frame_start': 0, 'frame_end': 45}
+[2021-04-25 19:53:46] [1] {'motion_idx': 0, 'frame_start': 45, 'frame_end': 90}
+[2021-04-25 19:53:50] [2] {'motion_idx': 0, 'frame_start': 90, 'frame_end': 135}
+[2021-04-25 19:53:53] [3] {'motion_idx': 0, 'frame_start': 135, 'frame_end': 180}
+[2021-04-25 19:53:55] [4] {'motion_idx': 0, 'frame_start': 180, 'frame_end': 225}
+[2021-04-25 19:53:57] [5] {'motion_idx': 0, 'frame_start': 225, 'frame_end': 270}
+[2021-04-25 19:53:59] [6] {'motion_idx': 0, 'frame_start': 270, 'frame_end': 315}
+[2021-04-25 19:54:01] Saved BVH
