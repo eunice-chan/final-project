@@ -4,7 +4,5 @@ This folder contains the Jupyter Notebook files for this project.
 
 | File | Description |
 |-----|-----|
-| `blank-notebook.ipynb`  | information on common table operations using both `datascience` and `pandas`  |
-| `insurance-datascience.ipynb`  | reproduction analysis using the `datascience` library  |
-| `insurance-pandas.ipynb`  | reproduction analysis using `pandas`  |
-| `pre-analysis-plan.ipynb`  | Pre-Analysis Plan for this project  |
+| `Graph Manipulation.ipynb`  | To explore and manipulate the graph. Create gexf of n SCC and save a csv of the node information  |
+| `metric.ipynb`  | To generate the metrics based on the metrics.csv  |
